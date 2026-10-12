@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>วัดระดับความเป็นเพื่อนแท้</title>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+ <section id="intro" class="card center">
+  <div style="font-size:3rem">💖</div>
+  <h1 id="title"></h1>
+  <p>ตอบ 10 ข้อเกี่ยวกับสิ่งที่ <b id="owner1"></b> ชอบ แล้วมาดูว่าเธอเป็นเพื่อนแท้ระดับไหน</p>
+  <input id="fname" placeholder="ใส่ชื่อของเธอ" maxlength="30">
+  <button class="btn" id="start">เริ่มวัดผลเลย</button>
+ </section>
+
+ <section id="quiz" class="card hide">
+  <div class="bar"><i id="prog"></i></div>
+  <p class="small" id="count"></p>
+  <div class="q" id="qtext"></div>
+  <div id="opts"></div>
+ </section>
+
+ <section id="loading" class="card center hide">
+  <div class="spin"></div>
+  <p id="loadmsg">กำลังประมวลผล...</p>
+ </section>
+
+ <section id="result" class="card center hide">
+  <span class="badge">🏆 ผลการวัด</span>
+  <div class="score" id="score">100%</div>
+  <h2 id="verdict" style="margin:0 0 8px"></h2>
+  <p id="detail"></p>
+  <p class="small" id="real"></p>
+  <button class="btn" id="again">ให้เพื่อนอีกคนลอง</button>
+ </section>
+</main>
+
+<script src="script.js"></script>
+<script src="cute.js"></script>
+</body>
+</html>

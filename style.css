@@ -1,0 +1,27 @@
+:root{--bg:#fff7f2;--card:#fff;--ink:#2b2230;--mute:#7a6f80;--pri:#ff5d8f;--pri2:#ffb36b;--line:#f0dfe3;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c1722;--card:#272030;--ink:#f6eef8;--mute:#a99db0;--line:#3a3044}}
+:root[data-theme="dark"]{--bg:#1c1722;--card:#272030;--ink:#f6eef8;--mute:#a99db0;--line:#3a3044}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Kanit',system-ui,sans-serif;line-height:1.5}
+main{max-width:560px;margin:0 auto;padding:20px 16px 40px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 6px 24px rgba(255,93,143,.12)}
+h1{font-size:1.6rem;margin:0 0 6px;background:linear-gradient(90deg,var(--pri),var(--pri2));-webkit-background-clip:text;background-clip:text;color:transparent}
+p{margin:0 0 14px;color:var(--mute)}
+input{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit;margin-bottom:14px}
+button{font:inherit;cursor:pointer}
+.btn{width:100%;padding:13px;border:0;border-radius:14px;color:#fff;font-weight:600;background:linear-gradient(90deg,var(--pri),var(--pri2))}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.bar{height:8px;background:var(--line);border-radius:99px;overflow:hidden;margin-bottom:16px}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--pri),var(--pri2));transition:width .3s}
+.q{font-size:1.15rem;font-weight:600;margin-bottom:14px}
+.opt{display:block;width:100%;text-align:left;padding:12px 14px;margin-bottom:10px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+.opt:active,.opt:hover{border-color:var(--pri)}
+.hide{display:none}
+.center{text-align:center}
+.score{font-size:4rem;font-weight:600;background:linear-gradient(90deg,var(--pri),var(--pri2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.badge{display:inline-block;padding:6px 14px;border-radius:99px;background:var(--pri);color:#fff;font-weight:600;margin-bottom:12px}
+.spin{width:48px;height:48px;border:5px solid var(--line);border-top-color:var(--pri);border-radius:50%;margin:10px auto 16px;animation:s 1s linear infinite}
+@keyframes s{to{transform:rotate(360deg)}}
+.small{font-size:.8rem}
